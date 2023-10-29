@@ -1,16 +1,9 @@
-<script>
-	import Counter from './Counter.svelte.txt';
-	import welcome from '$lib/images/svelte-welcome.webp';
-	import welcome_fallback from '$lib/images/svelte-welcome.png';
-</script>
-
 <svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<title>GPTutor</title>
+	<meta name="description" content="App that tutors people using GPT4" />
 </svelte:head>
 
-<section>
-	<h1>
-		GPTutor
-	</h1>
-</section>
+<main>
+	<h1 class="text-3xl font-bold underline">Hello world!</h1>
+</main>
+
