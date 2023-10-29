@@ -1,5 +1,5 @@
 <script>
-	import Counter from './Counter.svelte';
+	import Counter from './Counter.svelte.txt';
 	import welcome from '$lib/images/svelte-welcome.webp';
 	import welcome_fallback from '$lib/images/svelte-welcome.png';
 </script>
@@ -14,17 +14,3 @@
 		GPTutor
 	</h1>
 </section>
-
-<style>
-	section {
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-start;
-		align-items: flex-start;
-		flex: 0.5;
-	}
-
-	h1 {
-		width: 100%;
-	}
-</style>
