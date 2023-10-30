@@ -3,7 +3,8 @@
 	<meta name="description" content="App that tutors people using GPT4" />
 </svelte:head>
 
-<main>
-	<h1 class="text-3xl font-bold underline">Hello world!</h1>
-</main>
+<section>
+	<h1 class="text-3xl font-bold underline">Home</h1>
+	<a href="/start">Get Started</a>
+</section>
 
