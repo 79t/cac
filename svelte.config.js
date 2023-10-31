@@ -19,6 +19,11 @@ const config = {
 		define: {
 		  'process.env.OPENAI_API_KEY': process.env.OPENAI_API_KEY,
 		},
+		server: {
+            fs: {
+                allow: ["/home/user/super"]
+            }
+        },
 	  },
 };
 
