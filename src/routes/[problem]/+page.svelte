@@ -2,10 +2,10 @@
 	import type { PageData } from "./$types"
 	import { Stepper, Step } from '@skeletonlabs/skeleton';
 
-	export let data: PageData 
+	export let data: PageData
 	let better = data.reply.split('Answer:')
 	let best = better[1].split('Explanation:')
-	
+
 	let lockedState: boolean = true;
 	function clicked() {
 		lockedState = false;
@@ -25,5 +25,6 @@
 	</Step>
 	<Step>
 		The explanation for this question: {best[1]}
+		<button class="btn variant-filled-tertiary" on:click={() => location.reload()}>Generate new problem</button>
 	</Step>
 </Stepper>

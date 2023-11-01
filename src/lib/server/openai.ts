@@ -24,5 +24,6 @@ export const createChatCompletion = async ( problem: string, character: string )
         throw new Error(`Cound not ask OpenAI to generate a(n) ${problem} question.`)
     }
     const json = await response.json()
+    console.log(JSON.stringify(json))
     return json.choices[0].message.content
 }

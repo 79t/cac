@@ -24,6 +24,6 @@
 		Then, count down your number line, moving the same number of spaces as the second number you’re adding or subtracting.
 		You’ll land on your answer.<br>
 		<img src="https://files.catbox.moe/fkjq9x.png" alt="">
-		<a href="/addition" class="text-white underline text-center">Go to practice problems!</a>
+		<a href="/addition" class="btn variant-filled-primary">Go to practice problems!</a>
 	</Step>
 </Stepper>
