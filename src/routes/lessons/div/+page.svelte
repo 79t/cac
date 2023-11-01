@@ -20,5 +20,7 @@
     <Step><img src="/part 4.png" alt="">
     5.  Put the fourth piece back in the first pile.</Step>
     <Step>6. Continue putting a piece into each group till all 12 counters are used up. <br>
-    You'll end up with 4 counters in each group so 12 divided into 3 is 4. Your done! You can also write it this way: 12 ÷ 3 = 4</Step>
+    You'll end up with 4 counters in each group so 12 divided into 3 is 4. Your done! You can also write it this way: 12 ÷ 3 = 4<br>
+    <a href="/division" class="text-white underline text-center">Go to practice problems!</a>
+</Step>
 </Stepper>

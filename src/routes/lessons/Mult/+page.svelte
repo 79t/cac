@@ -12,6 +12,7 @@
     <Step>For instance, say you are given the problem 6∗2.<br>
     This is really just another way to say “6 groups of 2,” or, for that matter, “2 groups of 6.”</Step>
     <Step><img src="/multiply.png" alt=""><br>
-    Thus, you could set up the problem like in the image above, then count the number of blocks to get your answer.</Step>
-
+    Thus, you could set up the problem like in the image above, then count the number of blocks to get your answer.<br>
+    <a href="/multiplication" class="text-white underline text-center">Go to practice problems!</a>
+</Step>
 </Stepper>

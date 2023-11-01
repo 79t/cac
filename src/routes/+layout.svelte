@@ -10,9 +10,9 @@
 	<AppBar shadow="shadow-lg" slotLead="text-md place-self-evenly space-x-3" slotTrail="text-xl">
 		<svelte:fragment slot="lead">
 			<h1 class="text-2xl">GPTutor</h1>
-			<h1>Home</h1>
-			<h1>Learn</h1>
-			<h1>Practice</h1>
+			<a href="/">Home</a>
+			<a href="/start">Learn</a>
+			<a href="/practice">Practice</a>
 		</svelte:fragment>
 		<svelte:fragment slot="trail">
 			<LightSwitch rounded="rounded-full"/>

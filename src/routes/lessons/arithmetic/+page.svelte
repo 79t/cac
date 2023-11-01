@@ -1,16 +1,13 @@
 <script lang="ts">
 	import { Stepper, Step } from '@skeletonlabs/skeleton';
 	import { redirect } from "@sveltejs/kit";
-	function onCompleteHandler(e: Event) {
-		throw redirect(302, '/add');
-	}
 
 </script>
 <svelte:head>
 	<title>Arithmetics Lesson</title>
 </svelte:head>
 
-<Stepper on:complete{onCompleteHandler} class="m-20">
+<Stepper class="m-20">
 	<Step>
 		<svelte:fragment slot="header">Addition and Subtraction</svelte:fragment>
 		<b>Use a number line if you’re just learning to add/subtract.</b><br>
@@ -25,7 +22,8 @@
 	</Step>
 	<Step>
 		Then, count down your number line, moving the same number of spaces as the second number you’re adding or subtracting.
-		You’ll land on your answer.
+		You’ll land on your answer.<br>
 		<img src="https://files.catbox.moe/fkjq9x.png" alt="">
+		<a href="/addition" class="text-white underline text-center">Go to practice problems!</a>
 	</Step>
 </Stepper>

@@ -1,11 +1,11 @@
-import { OPENAI_API_KEY } from '$env/static/private'
+import {OPENAI_API_KEY} from "$env/static/private"
 
 export const createChatCompletion = async ( problem: string, character: string ) => {
     const response = await fetch('https://api.openai.com/v1/chat/completions', {
         method: 'POST',
         headers: new Headers({
             'Content-type': 'application/json',
-            "Authorization": `Bearer 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`,
+            "Authorization": `Bearer ${OPENAI_API_KEY}`,
         }),
         body: JSON.stringify({
             model: "gpt-4",
@@ -19,9 +19,10 @@ export const createChatCompletion = async ( problem: string, character: string )
             }]
         })
     })
-    //if(!response.ok) {
-    //    throw new Error(`Cound not ask OpenAI to generate a(n) ${problem} question.`)
-    //}
+    console.log(response)
+    if(!response.ok) {
+        throw new Error(`Cound not ask OpenAI to generate a(n) ${problem} question.`)
+    }
     const json = await response.json()
     return json.choices[0].message.content
 }

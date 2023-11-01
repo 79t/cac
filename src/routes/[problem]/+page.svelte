@@ -17,7 +17,7 @@
 <Stepper class="m-20 text-center">
 	<Step locked={lockedState}>
 		Answer this question: {better[0]}<br>
-		<textarea id="locker" name="locker" rows="1" cols="20"></textarea><br>
+		<textarea id="locker" name="locker" rows="1" cols="20" class="text-black"></textarea><br>
 		<button type="button" on:click={() => {clicked()}} class="border-2 rounded border-black bg-black">Submit Answer</button>
 	</Step>
 	<Step>
