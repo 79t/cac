@@ -7,7 +7,8 @@
 	<h1 class="text-3xl font-bold underline">Choose a Course!</h1>
 </section>
 <div class="flex-column">
-    <a href="arithmetic">Simple Addition, Subtraction, Multiplication, and Division</a><br>
-    <a href="algebra">Simple Algebra</a><br>
-    <a href="trig">Trigonometry</a><br>
+    <a href="/lessons/arithmetic">Simple Addition, and Subtraction</a><br>
+    <a href="/lessons/Mult">Multiplication</a><br>
+    <a href="/lessons/div">Division</a><br>
+    <!--<a href="/lessons/fractions">Fractions</a><br>-->
 </div>

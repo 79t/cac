@@ -1,6 +1,8 @@
 <script>
     import "../app.css"
     import { AppShell, AppBar, LightSwitch, Avatar } from '@skeletonlabs/skeleton'
+	export let data;
+	import {goto} from '$app/navigation'
 </script>
 
 <AppShell>
@@ -14,7 +16,11 @@
 		</svelte:fragment>
 		<svelte:fragment slot="trail">
 			<LightSwitch rounded="rounded-full"/>
-			<Avatar initials="SV" width="w-10"></Avatar>
+			{#if data.loggedIn}
+				<a href="/me"><Avatar initials={data.username} width="w-12" background="bg-surface-400" border="border-4 border-surface-300-600-token hover:!border-primary-500"></Avatar></a>
+			{:else}
+				<a href="/login" class="text-md">Log in!</a>
+			{/if}
 		</svelte:fragment>
 	</AppBar>
 		</svelte:fragment>
