@@ -1,9 +1,7 @@
 <script lang="ts">
 	import { Stepper, Step } from '@skeletonlabs/skeleton';
 	import { redirect } from "@sveltejs/kit";
-	function onCompleteHandler(e: Event) {
-		throw redirect(302, "/add");
-	}
+
 </script>
 <svelte:head>
 	<title>Arithmetics Lesson</title>
