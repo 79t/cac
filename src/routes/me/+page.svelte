@@ -8,6 +8,8 @@
 <p>User id: {data.userId}</p>
 <p>Username: {data.username}</p>
 
+
+
 <form use:enhance action="?/logout" method="post">
     <input type="submit" value="Logout" />
 </form>

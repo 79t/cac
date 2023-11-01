@@ -4,6 +4,7 @@
 	function onCompleteHandler(e: Event) {
 		throw redirect(302, '/add');
 	}
+
 </script>
 <svelte:head>
 	<title>Arithmetics Lesson</title>
