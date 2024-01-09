@@ -31,7 +31,7 @@
             {/if}
         </ul>
 
-        <input minlength="1" required placeholder="Add a character!" id="add" bind:value={ac}/>
+        <input class="text-black" minlength="1" required placeholder="Add a character!" id="add" bind:value={ac}/>
         <button class="btn variant-filled-primary" on:click={() => {
             if (ac === undefined || ac.length == 0) {
                 alert('please add a value!')
