@@ -31,8 +31,14 @@
             {/if}
         </ul>
 
-        <input placeholder="Add a character!" id="add" bind:value={ac}/>
-        <button class="btn variant-filled-primary" on:click={() => {characters_copy = [...characters_copy, ac]; ac = ''}}>Add character</button>
+        <input minlength="1" required placeholder="Add a character!" id="add" bind:value={ac}/>
+        <button class="btn variant-filled-primary" on:click={() => {
+            if (ac === undefined || ac.length == 0) {
+                alert('please add a value!')
+                return;
+            }
+            characters_copy = [...characters_copy, ac]; ac = ''
+        }}>Add character</button>
 
         <button on:click|preventDefault={async () => { await doSubmitThing() }} class="btn variant-filled-secondary">Update characters</button>
 

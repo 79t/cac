@@ -11,8 +11,8 @@
         <input type="text" name="username" id="username" class="text-black" /> <br />
         <label for="password">Password</label>
         <input type="password" name="password" id="password" class="text-black" /> <br />
-        <!--<input type="submit" class="btn variant-filled-primary mt-5" value="Sign In"/>-->
-        <a href="/start" class="btn variant-filled-primary mt-5">Sign In</a>
+        <input type="submit" class="btn variant-filled-primary mt-5" value="Sign In"/>
+        <!-- <a href="/start" class="btn variant-filled-primary mt-5">Sign In</a> -->
 
     </form>
     <a href="/signup" class="btn variant-filled-secondary mt-5 text-center ml-3">Create an Account</a>

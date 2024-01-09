@@ -46,8 +46,10 @@ export const actions: Actions = {
 				userId: key.userId,
 				attributes: {}
 			});
+			console.log('session created')
 			locals.auth.setSession(session); // set session cookie
 		} catch (e) {
+			console.log(e)
 			if (
 				e instanceof LuciaError &&
 				(e.message === "AUTH_INVALID_KEY_ID" ||
