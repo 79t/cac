@@ -31,7 +31,7 @@
 	<slot />
 	<!-- ---- / ---- -->
 	<svelte:fragment slot="pageFooter">
-		<p class="text-center mb-2">Created by Suhas Voolla and Seojin Kim - TX10</p>
+		<p class="text-center mb-2">Created by Suhas Voolla, Seojin Kim, and Pradyota Phaneesh for DECA</p>
 	</svelte:fragment>
 	<!-- (footer) -->
 </AppShell>
